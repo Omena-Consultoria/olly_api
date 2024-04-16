@@ -3,7 +3,7 @@ import os
 
 dynamodb = resource("dynamodb",
                     aws_access_key_id=os.environ['AWS_ACCESS_KEY'],
-                    aws_secret_key_id=os.environ['AWS_SECRET_KEY'],
+                    aws_secret_access_key=os.environ['AWS_SECRET_KEY'],
                     region_name=os.environ['AWS_REGION_NAME'],
                     )
 
