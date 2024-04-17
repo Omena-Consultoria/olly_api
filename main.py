@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from aws.dynamo import create_tables
+from db.dynamo import create_tables
 
 app = FastAPI()
 
