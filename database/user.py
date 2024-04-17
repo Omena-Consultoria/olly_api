@@ -1,4 +1,4 @@
-from db import dynamodb
+from .db import dynamodb
 from botocore.exceptions import ClientError
 from fastapi.responses import JSONResponse
 
