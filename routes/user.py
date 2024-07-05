@@ -6,4 +6,4 @@ routes_user = APIRouter()
 
 @routes_user.post("/register/", response_model=User)
 async def register(user: User):
-  return create_user(user.model_dump()) 
+  return create_user(user.model_dump())
