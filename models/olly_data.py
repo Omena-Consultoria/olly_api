@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Dict
+from typing import List
 
 class OllyDataModel(BaseModel):
-  answersArray: Dict
+  answersArray: List
