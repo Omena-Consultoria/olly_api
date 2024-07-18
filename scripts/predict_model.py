@@ -14,7 +14,7 @@ def train_and_predict_model(train_path, arr):
     
     #Separating categorical features
     categorical_features = ['filme', 'musica', 'prefere', 'paisagem', 'esporte', 'cor', 'impressao',
-       'fds', 'relaxar', 'se_considera', 'genero', 'estcivil','regiao']
+       'fds', 'relaxar', 'se_considera']
 
     model = CatBoostClassifier(iterations=20,
                            learning_rate=0.8,
