@@ -12,4 +12,5 @@ class User(BaseModel):
   id: str = Field(default_factory=generate_id)
   name: str
   email: str
+  consent: bool
   created_at: str = Field(default_factory=generate_date)
