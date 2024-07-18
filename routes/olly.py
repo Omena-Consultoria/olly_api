@@ -7,4 +7,5 @@ routes_olly = APIRouter()
 
 @routes_olly.post("/predict/")
 async def prediction(answersArray: OllyDataModel):
-  return {'car_predicted': train_and_predict_model(load_olly_data_from_s3(), answersArray.answersArray)}
+  transformed_array = [list(answersArray.answersArray[0][0].values())]
+  return {'car_predicted': train_and_predict_model(load_olly_data_from_s3(), transformed_array)}

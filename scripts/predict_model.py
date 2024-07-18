@@ -16,8 +16,8 @@ def train_and_predict_model(train_path, arr):
     categorical_features = ['filme', 'musica', 'prefere', 'paisagem', 'esporte', 'cor', 'impressao',
        'fds', 'relaxar', 'se_considera', 'genero', 'estcivil','regiao']
 
-    model = CatBoostClassifier(iterations=20, 
-                           learning_rate=0.9,
+    model = CatBoostClassifier(iterations=20,
+                           learning_rate=0.8,
                            depth=3,
                            cat_features=categorical_features,
                            verbose=False)
