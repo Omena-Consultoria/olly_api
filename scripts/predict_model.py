@@ -20,7 +20,8 @@ def train_and_predict_model(train_path, arr):
                            learning_rate=0.8,
                            depth=3,
                            cat_features=categorical_features,
-                           verbose=False)
+                           verbose=False,
+                           allow_writing_files=False)
     
     # Fitting the model
     model.fit(x, y)
