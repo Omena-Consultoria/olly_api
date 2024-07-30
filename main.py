@@ -6,7 +6,7 @@ from routes.olly import routes_olly
 
 app = FastAPI()
 
-origins = ["https://carroideal.omenaseguros.com"]
+origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
